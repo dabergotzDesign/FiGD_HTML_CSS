@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>HTML Tests</title>
+</head>
+<body>
+    <main>
+        <!-- 21.11.22 -- Base HTML -->
+        <section class="date">Date: 21.11.22</section>
+
+        <h1>This is an H1</h1>
+        <details>
+            <summary>Inhalt</summary>
+            <ul>
+                <li>kein Inhalt :(</li>
+            </ul>
+        </details>
+        <section>
+            <h2>This is an H2</h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+             At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+             At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+
+            <p class="roboto">This text is in Roboto</p>
+            <p class="rubik">This text is in Rubik-Glitch</p>
+
+        </section>
+
+        <!-- 22.11.22 -- Flexbox, Grid -->
+
+        <section class="date">Date: 22.11.22</section>
+
+  
+
+        </section>
+    </main>
+</body>
+
+<style>
+   /*  @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Glitch&display=swap'); */
+
+   .date{
+    text-align: end;
+    margin: 1rem;
+    text-decoration: underline;
+   }
+
+   @font-face {
+    font-family: "RubikGlitch-Regular";
+    src: url("/fonts/Rubik_Glitch/RubikGlitch-Regular.eot");
+    src: url("/fonts/Rubik_Glitch/RubikGlitch-Regular.eot?#iefix") format('embedded-opentype'),
+         url("/fonts/Rubik_Glitch/RubikGlitch-Regular.woff2") format('woff2'),
+         url("/fonts/Rubik_Glitch/RubikGlitch-Regular.woff") format('woff'),
+         url("/fonts/Rubik_Glitch/RubikGlitch-Regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+    .roboto , h1{
+        font-family: 'Roboto', sans-serif;
+    }
+    .rubik, h2{
+        font-family: "RubikGlitch-Regular";
+        text-shadow: cyan 2px 2px 2px;
+    }
+
+    .rubik:hover,
+    h2:hover{
+        text-shadow: yellow 2px 2px 2px;
+        cursor: pointer;
+    }
+
+    .rubik:focus,
+    h2:focus{
+        text-shadow: yellow 2px 2px 2px;
+        cursor: pointer;
+    }
+
+    .rubik:active,
+    h2:active{
+        text-shadow: green 2px 2px 2px;
+    }
+</style>
+
+</html>
